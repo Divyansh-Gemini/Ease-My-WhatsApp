@@ -1,37 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:padding="40sp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilMobile"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:id="@+id/editTextNumber1"
+            android:id="@+id/editTextMobile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter mobile no."
+            android:hint="@string/enter_mobile_no"
             android:inputType="number"
             android:maxLength="10" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilMessage"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/tilMobile"
+        app:layout_constraintStart_toStartOf="@+id/tilMobile"
+        app:layout_constraintTop_toBottomOf="@+id/tilMobile">
 
         <EditText
-            android:id="@+id/editTextText1"
+            android:id="@+id/editTextMessage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter message"
+            android:hint="@string/enter_message"
             android:inputType="textShortMessage|textLongMessage|textMultiLine"
             android:maxHeight="300dp" />
 
@@ -39,28 +50,31 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="75dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/tilMessage"
+        app:layout_constraintStart_toStartOf="@+id/tilMessage"
+        app:layout_constraintTop_toBottomOf="@+id/tilMessage">
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/btnCopy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="25dp"
+            android:layout_marginEnd="10sp"
             android:layout_weight="1"
-            android:text="Copy Link"
+            android:text="@string/copy_link"
             android:textAllCaps="false" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnOpen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="25dp"
+            android:layout_marginStart="10sp"
             android:layout_weight="1"
-            android:text="Open WhatsApp"
+            android:text="@string/open_whatsapp"
             android:textAllCaps="false" />
 
     </LinearLayout>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

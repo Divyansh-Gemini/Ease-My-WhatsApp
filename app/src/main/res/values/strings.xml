@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Ease My WhatsApp</string>
+    <string name="enter_mobile_no">Enter mobile no.</string>
+    <string name="enter_message">Enter message</string>
+    <string name="copy_link">Copy Link</string>
+    <string name="open_whatsapp">Open WhatsApp</string>
 </resources>
