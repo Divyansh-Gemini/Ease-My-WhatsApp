@@ -19,7 +19,7 @@ A simple Android app that allows you to send WhatsApp messages without saving th
 ## Screenshots
 <p align="center">
     <img src="https://github.com/Divyansh-Gemini/Ease-My-WhatsApp/assets/88696617/81358e9d-3007-415b-9cf5-70d300e8d0a8" height="500" />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <img src="https://github.com/Divyansh-Gemini/Ease-My-WhatsApp/assets/88696617/a02293cd-b4c5-433f-a7e6-3ed90dadc69c" height="500" />
 </p>
 
