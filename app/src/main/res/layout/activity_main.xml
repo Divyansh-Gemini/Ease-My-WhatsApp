@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:padding="40sp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="40sp"
     tools:context=".MainActivity">
 
     <com.google.android.material.textfield.TextInputLayout
@@ -14,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -34,6 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="@+id/tilMobile"
         app:layout_constraintStart_toStartOf="@+id/tilMobile"
         app:layout_constraintTop_toBottomOf="@+id/tilMobile">
